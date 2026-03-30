@@ -1,0 +1,6 @@
+﻿  Chapter04.c
+E:\00__Study\00__Book\002pB__Practice\Chapter04\Chapter04\Chapter04.c(10,5): warning C4047: '=': 'char *' differs in levels of indirection from 'int'
+E:\00__Study\00__Book\002pB__Practice\Chapter04\Chapter04\Chapter04.c(11,5): warning C4047: '=': 'char *' differs in levels of indirection from 'int'
+E:\00__Study\00__Book\002pB__Practice\Chapter04\Chapter04\Chapter04.c(12,10): warning C4047: 'function': 'int' differs in levels of indirection from 'char *'
+E:\00__Study\00__Book\002pB__Practice\Chapter04\Chapter04\Chapter04.c(12,10): warning C4024: 'putchar': different types for formal and actual parameter 1
+  Chapter04.vcxproj -> E:\00__Study\00__Book\002pB__Practice\Chapter04\x64\Debug\Chapter04.exe
