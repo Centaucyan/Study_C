@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\00__Study\\00__Book\\002pB__Practice\\Chapter05\\",
+  "WorkspaceRootPath": "F:\\00__Study\\00__Book\\002pB__Practice\\Study_C\\Chapter05\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7ED80550-EC12-4AAA-8C4B-4F3EF4A6361C}|Chapter05\\Chapter05.vcxproj|E:\\00__Study\\00__Book\\002pB__Practice\\Chapter05\\Chapter05\\Chapter05.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{7ED80550-EC12-4AAA-8C4B-4F3EF4A6361C}|Chapter05\\Chapter05.vcxproj|F:\\00__Study\\00__Book\\002pB__Practice\\Study_C\\Chapter05\\Chapter05\\Chapter05.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{7ED80550-EC12-4AAA-8C4B-4F3EF4A6361C}|Chapter05\\Chapter05.vcxproj|solutionrelative:Chapter05\\Chapter05.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -24,11 +24,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Chapter05.c",
-              "DocumentMoniker": "E:\\00__Study\\00__Book\\002pB__Practice\\Chapter05\\Chapter05\\Chapter05.c",
+              "DocumentMoniker": "F:\\00__Study\\00__Book\\002pB__Practice\\Study_C\\Chapter05\\Chapter05\\Chapter05.c",
               "RelativeDocumentMoniker": "Chapter05\\Chapter05.c",
-              "ToolTip": "E:\\00__Study\\00__Book\\002pB__Practice\\Chapter05\\Chapter05\\Chapter05.c",
+              "ToolTip": "F:\\00__Study\\00__Book\\002pB__Practice\\Study_C\\Chapter05\\Chapter05\\Chapter05.c",
               "RelativeToolTip": "Chapter05\\Chapter05.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2026-03-25T09:42:01.977Z",
               "EditorCaption": ""

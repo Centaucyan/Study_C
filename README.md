@@ -1,10 +1,23 @@
 # Study_C
+- Book : 최호성의 C 프로그래밍
+- Tool : Visual Studio 2022
+***
 ### Chapter 03
 - double, float, long, int, sizeof
 
 ### Chapter 04
-- getchar(), putchar(), gets(), puts(), 
-- printf(), scanf_s()
+- getchar(void), putchar(int char), gets(*buffer), puts(*buffer), 
+- %c, %s 
+- %d, %f, %p
+- %o, %x, %X, %e, %E
+- printf("형식문자", 가변인자), scanf_s("형식문자", 메모리주소)
 
 ### Chapter 05
-- %d, %s, %f, %p
+- 산술 연산자 : +, -, *, /, %
+- 형변환 연산자 : (자료형) 피변환자
+- 단순/복합 대입 연산자 : =, +=, -=, >>=, |= 등등
+- 비트 연산자 : &, |, ^, ~, <<, >>
+- Mask 연산
+- 단항 증감 연산자 
+    - 전위 연산 : ++a, --a
+    - 후위 연산 : a++, a--

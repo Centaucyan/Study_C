@@ -3,14 +3,25 @@
 
 void main()
 {
-	//. p.147
-	char* ch;
+	//. p.147-3
+	char szBuffer[32] = { 0 };
+	gets(szBuffer);
+	printf("%p %s\n", szBuffer, szBuffer);
+
+
+	//. p.147-2
+	/*char szBuffer[32] = {0};
+	gets(szBuffer);
+	printf("%s\n", szBuffer);*/
+
+
+	//. p.147-1
+	/*char* ch;
 	
 	printf("Input Ch over 3ch: ");
 	ch = getchar();
 	ch = getchar();
-	putchar(ch);
-
+	putchar(ch);*/
 
 
 	//. p.143
@@ -19,6 +30,7 @@ void main()
 
 	scanf_s("%f %f", &fInput1, &fInput2);
 	printf("%.2f + %.2f == %.2f\n", fInput1, fInput2, fInput1 + fInput2);*/
+
 
 	//. p.139
 	/*int nInput = 0;
@@ -44,6 +56,7 @@ void main()
 	printf("%p\n",num);
 	printf("%p\n",&num);*/
 
+
 	//. p.130
 	/*char* pszData = "Test string!";
 
@@ -54,15 +67,14 @@ void main()
 
 	//. p121
 	//char szBuffer[128] = { 0 };  //. 배열 선언시 []안의 단위는 자료형 단위. char형 자료형이 128개 있다는 의미.
-	//printf("Input your name: ");
-	//gets(szBuffer);
+	/*printf("Input your name: ");
+	gets(szBuffer);
 
-	//printf("Your name is ");
-	//puts(szBuffer);
+	printf("Your name is ");
+	puts(szBuffer);*/
 
 
-	//////////
-
+	//. p116
 	/*char ch;
 
 	ch = _getch();
@@ -70,6 +82,7 @@ void main()
 
 	ch = _getche();
 	printf("%c\n", ch);*/
+
 
 	//. p113
 	/*char ch;
