@@ -1,3 +1,14 @@
 ﻿  Chapter04.c
-F:\00__Study\00__Book\002pB__Practice\Study_C\Chapter04\Chapter04\Chapter04.c(8,2): warning C4013: 'gets' undefined; assuming extern returning int
+F:\00__Study\00__Book\002pB__Practice\Study_C\Chapter04\Chapter04\Chapter04.c(30,9): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+      F:\00__Study\00__Book\002pB__Practice\Study_C\Chapter04\Chapter04\Chapter04.c(30,9):
+      consider using '%zd' in the format string
+  
+F:\00__Study\00__Book\002pB__Practice\Study_C\Chapter04\Chapter04\Chapter04.c(31,9): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'unsigned __int64'
+      F:\00__Study\00__Book\002pB__Practice\Study_C\Chapter04\Chapter04\Chapter04.c(31,9):
+      consider using '%lld' in the format string
+      F:\00__Study\00__Book\002pB__Practice\Study_C\Chapter04\Chapter04\Chapter04.c(31,9):
+      consider using '%Id' in the format string
+      F:\00__Study\00__Book\002pB__Practice\Study_C\Chapter04\Chapter04\Chapter04.c(31,9):
+      consider using '%I64d' in the format string
+  
   Chapter04.vcxproj -> F:\00__Study\00__Book\002pB__Practice\Study_C\Chapter04\x64\Debug\Chapter04.exe

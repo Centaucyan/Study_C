@@ -1,12 +1,13 @@
 #include <stdio.h>
+#include <stdlib.h>  //. _countof()
 //#include <conio.h>  //. _getch(), _getche()에 대한 선언 포함. 현재는 stdio.h에도 포함되어 있음.
 
 void main()
 {
 	//. p.147-3
-	char szBuffer[32] = { 0 };
+	/*char szBuffer[32] = { 0 };
 	gets(szBuffer);
-	printf("%p %s\n", szBuffer, szBuffer);
+	printf("%p %s\n", szBuffer, szBuffer);*/
 
 
 	//. p.147-2
@@ -24,12 +25,25 @@ void main()
 	putchar(ch);*/
 
 
-	//. p.143
-	/*float fInput1 = 0, fInput2 = 0;
-	printf("Input float data: ");
+	//. +a
+	int data[10] = { 0 };
+	printf("%d\n", sizeof(data));
+	printf("%d\n", _countof(data));
 
-	scanf_s("%f %f", &fInput1, &fInput2);
-	printf("%.2f + %.2f == %.2f\n", fInput1, fInput2, fInput1 + fInput2);*/
+
+	//. p.143
+	//float fInput1 = 0, fInput2 = 0;
+	//printf("Input float data: ");
+
+	//scanf_s("%f %f", &fInput1, &fInput2);
+	//printf("%.2f + %.2f == %.2f\n", fInput1, fInput2, fInput1 + fInput2);
+
+	//char szBuffer[128] = { 0 };
+	//printf("Input str: ");
+
+	////scanf_s("%s", szBuffer);  //. scanf_s()에서 문자열을 넘길 때는 아래와 같이 원소 갯수까지 넘겨줘야 한다.
+	//scanf_s("%s", szBuffer, (unsigned)(sizeof(szBuffer) / sizeof(szBuffer[0])));  
+	//puts(szBuffer);
 
 
 	//. p.139

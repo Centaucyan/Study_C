@@ -10,6 +10,7 @@
 - %c, %s 
 - %d, %f, %p
 - %o, %x, %X, %e, %E
+- 변수 선언 시 *name과 &name 차이
 - printf("형식문자", 가변인자), scanf_s("형식문자", 메모리주소)
 
 ### Chapter 05

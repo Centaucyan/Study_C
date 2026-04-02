@@ -3,21 +3,21 @@
 void main()
 {
 	//. p.102
-	/*int nData = 10;
+	int nData = 10;
 	int *pnData = &nData;
 
 	*pnData = 255;
 	*pnData = 256;
-	*pnData = 9999999999;*/
+	*pnData = 9999999999;
 	 
 
 	//. p.84
-	char* pszData = "abc";
-	char ch = 'A';
+	//char* pszData = "abc";
+	//char ch = 'A';
 
-	printf("%s\n", pszData);
-	printf("%c\n", ch);
-	printf("%s\n", ch);  //. %s는 문자열을 받음. 문자 하나는 %c로 받음.
+	//printf("%s\n", pszData);
+	//printf("%c\n", ch);
+	//printf("%s\n", ch);  //. %s는 문자열을 받음. 문자 하나는 %c로 받음.
 
 	//. p.83
 	/*double dblData = 123.45;

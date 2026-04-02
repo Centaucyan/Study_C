@@ -3,13 +3,24 @@
 void main()
 {
 	//. p.190-6
+	//int nData = 0;
+	//scanf_s("%d", &nData);  //. 입력값은 초단위라고 가정
+	//	//. h:m:s 표현
+	//printf("%d:%d:%d\n",
+	//	nData / 3600,
+	//	nData / 60 % 60,
+	//	nData % 60);
+
+
+	//. p.190-5
 	int nData = 0;
-	scanf_s("%d", &nData);  //. 입력값은 초단위라고 가정
-		//. h:m:s 표현
-	printf("%d:%d:%d\n",
-		nData / 3600,
-		nData / 60 % 60,
-		nData % 60);
+	int nResult = 0;
+
+	printf("Input number: ");
+	scanf_s("%d", &nData);
+
+	nResult = nData * (-1);
+	printf("Sign conversion value is %d\n", nResult);
 
 
 	//. p.190-3
