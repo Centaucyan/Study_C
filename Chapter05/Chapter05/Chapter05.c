@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 void main()
 {
@@ -6,21 +7,29 @@ void main()
 	//int nData = 0;
 	//scanf_s("%d", &nData);  //. 입력값은 초단위라고 가정
 	//	//. h:m:s 표현
-	//printf("%d:%d:%d\n",
-	//	nData / 3600,
-	//	nData / 60 % 60,
-	//	nData % 60);
+	//printf("%d\n", nData);
+
+	//char sData[100];
+	////scanf_s("%99s", sData, (unsigned)_countof(sData));
+	//scanf_s("%99s", sData, _countof(sData));
+	//printf("%s\n", sData);
+
+	/*printf("%d\n", &nData);
+	printf("%d:%d:%d\n",
+		nData / 3600,
+		nData / 60 % 60,
+		nData % 60);*/
 
 
 	//. p.190-5
-	int nData = 0;
-	int nResult = 0;
+	//int nData = 0;
+	//int nResult = 0;
 
-	printf("Input number: ");
-	scanf_s("%d", &nData);
+	//printf("Input number: ");
+	//scanf_s("%d", &nData);
 
-	nResult = nData * (-1);
-	printf("Sign conversion value is %d\n", nResult);
+	//nResult = nData * (-1);
+	//printf("Sign conversion value is %d\n", nResult);
 
 
 	//. p.190-3
@@ -84,6 +93,24 @@ void main()
 	//printf("%X\n", nData_rshift);
 	//printf("%X\n", nData_lshift);
 	//printf("%X\n", nData_lshift_28);
+
+
+	//. +a
+	int nData = 0x80000001;  //. 10000000 00000000 00000000 00000001
+	int nData_lshift;
+	int nData_rshift;
+
+	printf("%d\n", nData);
+
+	nData_rshift = nData >> 1;
+	printf("%d\n", nData_rshift);
+	nData_rshift >>= 1;
+	printf("%d\n", nData_rshift);
+
+	nData_lshift = nData << 1;
+	printf("%d\n", nData_lshift);
+	nData_lshift <<= 1;
+	printf("%d\n", nData_lshift);
 
 
 	//. p.176

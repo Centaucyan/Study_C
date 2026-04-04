@@ -4,6 +4,20 @@
 
 void main()
 {
+	//. p.147-5
+	int nData;
+	printf("input Number: ");
+	scanf_s("%d", &nData);
+	printf("%o\n", nData);
+	printf("%X\n", nData);
+
+
+	//. p.147-4
+	//char cData;
+	//cData = getchar();
+	//printf("%d\n", cData);
+
+
 	//. p.147-3
 	/*char szBuffer[32] = { 0 };
 	gets(szBuffer);
@@ -26,9 +40,9 @@ void main()
 
 
 	//. +a
-	int data[10] = { 0 };
+	/*int data[10] = { 0 };
 	printf("%d\n", sizeof(data));
-	printf("%d\n", _countof(data));
+	printf("%d\n", _countof(data));*/
 
 
 	//. p.143
@@ -44,6 +58,8 @@ void main()
 	////scanf_s("%s", szBuffer);  //. scanf_s()에서 문자열을 넘길 때는 아래와 같이 원소 갯수까지 넘겨줘야 한다.
 	//scanf_s("%s", szBuffer, (unsigned)(sizeof(szBuffer) / sizeof(szBuffer[0])));  
 	//puts(szBuffer);
+	//printf("%s\n", szBuffer);
+	//printf("%s\n", &szBuffer);
 
 
 	//. p.139
