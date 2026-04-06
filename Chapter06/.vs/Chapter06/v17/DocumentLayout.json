@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "F:\\00__Study\\00__Book\\002pB__Practice\\Study_C\\Chapter06\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{75C9B307-6720-40C2-90A5-A78E55D5BCA1}|Chapter06\\Chapter06.vcxproj|F:\\00__Study\\00__Book\\002pB__Practice\\Study_C\\Chapter06\\Chapter06\\Chapter05.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{75C9B307-6720-40C2-90A5-A78E55D5BCA1}|Chapter06\\Chapter06.vcxproj|solutionrelative:Chapter06\\Chapter05.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{75C9B307-6720-40C2-90A5-A78E55D5BCA1}|Chapter06\\Chapter06.vcxproj|F:\\00__Study\\00__Book\\002pB__Practice\\Study_C\\Chapter06\\Chapter06\\Chapter06.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{75C9B307-6720-40C2-90A5-A78E55D5BCA1}|Chapter06\\Chapter06.vcxproj|solutionrelative:Chapter06\\Chapter06.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,12 +23,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Chapter05.c",
-              "DocumentMoniker": "F:\\00__Study\\00__Book\\002pB__Practice\\Study_C\\Chapter06\\Chapter06\\Chapter05.c",
-              "RelativeDocumentMoniker": "Chapter06\\Chapter05.c",
-              "ToolTip": "F:\\00__Study\\00__Book\\002pB__Practice\\Study_C\\Chapter06\\Chapter06\\Chapter05.c",
-              "RelativeToolTip": "Chapter06\\Chapter05.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABEAAAAAAAAAA==",
+              "Title": "Chapter06.c",
+              "DocumentMoniker": "F:\\00__Study\\00__Book\\002pB__Practice\\Study_C\\Chapter06\\Chapter06\\Chapter06.c",
+              "RelativeDocumentMoniker": "Chapter06\\Chapter06.c",
+              "ToolTip": "F:\\00__Study\\00__Book\\002pB__Practice\\Study_C\\Chapter06\\Chapter06\\Chapter06.c",
+              "RelativeToolTip": "Chapter06\\Chapter06.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2026-04-04T09:02:10.121Z",
               "EditorCaption": ""
