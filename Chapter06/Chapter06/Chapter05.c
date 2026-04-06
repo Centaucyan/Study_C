@@ -10,6 +10,7 @@ void main(void)
 
 	printf("Result: %d\n", (nInput_1 > 10) && (nInput_2 > 10) ? 1 : 0);
 
+
 	//. p.214
 	//int nData = 10;
 	//int* pnData = &nData;
@@ -19,6 +20,7 @@ void main(void)
 
 	//*pnData = 20;
 	//printf("%d %d\n", nData, *pnData);
+
 
 	//. p.204
 	//int nA = 10, nB = 20;
@@ -47,4 +49,13 @@ void main(void)
 	x = -1, y = -1, z = 1;
 	k = x++ || ++y && ++z;
 	printf("%d %d %d %d\n", k, x, y, z);*/
+
+
+	//. p.171
+	//char szName[16] = { 0 };
+	//const int nData = 10;
+
+	//szName = 'A';  //. szName은 배열로 선언되었으므로 배열의 첫번째 주소를 값으로 저장되어야 하는데 문자가 왔으므로 컴파일 오류가 일어난다.
+	//szName[0] = 'A';
+	////nData = 20;  //. const로 상수화 선언되었으므로 읽기만 가능. 컴파일 시 오류 일으킴.
 }
