@@ -3,24 +3,29 @@
 void main(void)
 {
 	//. p.219-1
-	int nInput_1 = 0, nInput_2 = 0;
+	/*int nInput_1 = 0, nInput_2 = 0;
 	printf("Input two numbers: ");
 	scanf_s("%d %d", &nInput_1, &nInput_2);
 	printf("nInput_1: %d __ nInput_2: %d\n\n", nInput_1, nInput_2);
 
-	printf("Result: %d\n", (nInput_1 > 10) && (nInput_2 > 10) ? 1 : 0);
+	printf("Result: %d\n", (nInput_1 > 10) && (nInput_2 > 10) ? 1 : 0);*/
 
 
 	//. p.214
-	//int nData = 10;
-	//int* pnData = &nData;
+	int nData = 10;
+	int* pnData = &nData;
 
-	//printf("%d %d\n", nData, *pnData);  //. Output: nData == 10, *pnData == 10
-	//printf("%p, %p\n", &nData, pnData);
+	printf("%d %d\n", nData, *pnData);  //. Output: nData == 10, *pnData == 10
+	printf("%p, %p\n", &nData, pnData);
 
-	//*pnData = 20;
-	//printf("%d %d\n", nData, *pnData);
+	*pnData = 20;
+	printf("%d %d\n", nData, *pnData);
+	printf("%p, %p\n", &nData, pnData);
 
+	//. p.209
+	//int nA = 0, nB = 0;
+	//nA = (nB = 10, nB + 6, nB + 4, nA + 2);  //. 콤마 연산자일 때는 나열 외에 대입 연산에 사용될 경우 첫째항과 끝항만 처리 되는것 같다.
+	//printf("nA = %d _ nB = %d", nA, nB);
 
 	//. p.204
 	//int nA = 10, nB = 20;

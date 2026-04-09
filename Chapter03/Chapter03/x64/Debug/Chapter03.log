@@ -1,6 +1,0 @@
-﻿  Chapter03.c
-F:\00__Study\00__Book\002pB__Practice\Study_C\Chapter03\Chapter03\Chapter03.c(19,9): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'int'
-F:\00__Study\00__Book\002pB__Practice\Study_C\Chapter03\Chapter03\Chapter03.c(19,9): warning C4313: 'printf': '%s' in format string conflicts with argument 1 of type 'int'
-F:\00__Study\00__Book\002pB__Practice\Study_C\Chapter03\Chapter03\Chapter03.c(21,9): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'int'
-F:\00__Study\00__Book\002pB__Practice\Study_C\Chapter03\Chapter03\Chapter03.c(21,9): warning C4313: 'printf': '%s' in format string conflicts with argument 1 of type 'int'
-  Chapter03.vcxproj -> F:\00__Study\00__Book\002pB__Practice\Study_C\Chapter03\x64\Debug\Chapter03.exe
