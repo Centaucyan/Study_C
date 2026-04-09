@@ -1,4 +1,7 @@
 # Study_C
+- Description
+    - 업무를 하면서 부족하다고 느낀 C 언어 개인 Study Practice
+***
 - Book : 최호성의 C 프로그래밍
 - Tool : Visual Studio 2022
 ***
