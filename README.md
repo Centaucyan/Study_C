@@ -34,3 +34,9 @@
 ### Chapter 07
 - if
 - switch/case : switch 식의 결과값은 정수(char, int, short)계열만 가능
+    - case의 break;를 만날때까지, 또는 default의 ;을 만날때까지 순차적 실행
+- goto 레이블;
+
+### Chapter 08
+- while, do/while
+- for
