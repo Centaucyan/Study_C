@@ -12,20 +12,22 @@ void main(void)
 
 
 	//. p.214
-	int nData = 10;
-	int* pnData = &nData;
+	//int nData = 10;
+	//int* pnData = &nData;
 
-	printf("%d %d\n", nData, *pnData);  //. Output: nData == 10, *pnData == 10
-	printf("%p, %p\n", &nData, pnData);
+	//printf("%d %d\n", nData, *pnData);  //. Output: nData == 10, *pnData == 10
+	//printf("%p, %p\n", &nData, pnData);
 
-	*pnData = 20;
-	printf("%d %d\n", nData, *pnData);
-	printf("%p, %p\n", &nData, pnData);
+	//*pnData = 20;
+	//printf("%d %d\n", nData, *pnData);
+	//printf("%p, %p\n", &nData, pnData);
+
 
 	//. p.209
-	//int nA = 0, nB = 0;
-	//nA = (nB = 10, nB + 6, nB + 4, nA + 2);  //. 콤마 연산자일 때는 나열 외에 대입 연산에 사용될 경우 첫째항과 끝항만 처리 되는것 같다.
-	//printf("nA = %d _ nB = %d", nA, nB);
+	int nA = 0, nB = 0;
+	nA = (nB + 10, nA + 6, nB + 4, nA = 2);  //. 콤마 연산자일 때는 각 원소가 산술 연산은 하되 결과 값은 버려짐. 각 원소 대입 연산은 결과값 저장됨. 마지막 원소가 바깥에서 nA로 대입됨. .
+	printf("nA = %d _ nB = %d", nA, nB);
+
 
 	//. p.204
 	//int nA = 10, nB = 20;
@@ -36,14 +38,24 @@ void main(void)
 	//printf("%s\n", nA + 20 < nB ? "Big" : "Small");  //. Output: "Small"
 
 	
-	//. p.204
-	/*char* pszData = "Hello, World!";
+	//. +a
+	//char* pNewData = "";
+	//strlen(pNewData);
+	//strlen(NULL);  //. strlen()함수에 NULL 값을 전달하면 런타임 오류 발생
+	//printf("%s", pNewData);
 
-	if (pszData != NULL && strlen(pszData) > 3)
-	{
-		printf("%s\n", pszData);
-		printf("%d\n", strlen(pszData));
-	}*/
+	//pNewData = "Gogogo~";
+	//printf("%s\n\n", pNewData);
+
+
+	//. p.204
+	//char* pszData = "Hello, World!";
+
+	//if (pszData != NULL && strlen(pszData) > 3)  //. 논리 연산의 생략(short circuit) 이용해서 런타임 오류 방지
+	//{
+	//	printf("%s\n", pszData);
+	//	printf("%d\n", strlen(pszData));
+	//}
 
 
 	//. p.202
