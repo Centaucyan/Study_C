@@ -23,10 +23,29 @@ void main(void)
 	//printf("%p, %p\n", &nData, pnData);
 
 
+	//. +@
+	int nData = 10;
+	int* nResult;
+
+	nResult = &nData;
+
+	printf("%d, %p\n", nData, &nData);
+	printf("%d, %p, %p\n", *nResult, nResult, &nResult);
+
+
+	//. p.212
+	/*int nData = 10;
+	int nResult = 0;
+
+	nResult += nData;
+	printf("%d, %p\n", nData, &nData);
+	printf("%d, %p\n", nResult, &nResult);*/
+
+
 	//. p.209
-	int nA = 0, nB = 0;
-	nA = (nB + 10, nA + 6, nB + 4, nA = 2);  //. 콤마 연산자일 때는 각 원소가 산술 연산은 하되 결과 값은 버려짐. 각 원소 대입 연산은 결과값 저장됨. 마지막 원소가 바깥에서 nA로 대입됨. .
-	printf("nA = %d _ nB = %d", nA, nB);
+	//int nA = 0, nB = 0;
+	//nA = (nB + 10, nA + 6, nB + 4, nA = 2);  //. 콤마 연산자일 때는 각 원소가 산술 연산은 하되 결과 값은 버려짐. 각 원소 대입 연산은 결과값 저장됨. 마지막 원소가 바깥에서 nA로 대입됨. .
+	//printf("nA = %d _ nB = %d", nA, nB);
 
 
 	//. p.204

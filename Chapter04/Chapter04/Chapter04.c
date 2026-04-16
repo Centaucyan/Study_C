@@ -5,11 +5,11 @@
 void main()
 {
 	//. p.147-5
-	int nData;
+	/*int nData;
 	printf("input Number: ");
 	scanf_s("%d", &nData);
 	printf("%o\n", nData);
-	printf("%X\n", nData);
+	printf("%X\n", nData);*/
 
 
 	//. p.147-4
@@ -72,13 +72,13 @@ void main()
 
 
 	//. p.137
-	//__int64 nData = 0xFFFFFFFF;  //. __int64라는 자료형은 Visual Studio에서 제공하는 자료형.
+	__int64 nData = 0xFFFFFFFF;  //. __int64라는 자료형은 Visual Studio에서 제공하는 자료형.
 
-	//printf("%d\n", nData);
-	//printf("%d\n", nData + 10);
-	//printf("%u\n", nData);
-	//printf("%u\n", nData + 10);
-	//printf("%I64u\n", nData + 10);
+	printf("%d\n", nData);
+	printf("%d\n", nData + 1);
+	printf("%u\n", nData);
+	printf("%u\n", nData + 1);
+	printf("%I64u\n", nData + 1);
 
 
 	//. p.130
