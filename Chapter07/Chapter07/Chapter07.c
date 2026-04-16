@@ -2,8 +2,23 @@
 
 void main(void)
 {
+	//. p.247-2
+	char c_data = 0;
+
+RESTART:
+
+	c_data = getche();
+
+	if (c_data == 'y' || c_data == 'Y') {
+		return;
+	}
+	else {
+		goto RESTART;
+	}
+
+
 	//. p.247-1
-	int n_data = 0, n_max = 0;
+	/*int n_data = 0, n_max = 0;
 	printf("Input number 4times:\n");
 	n_max = scanf_s("%d", &n_data);
 
@@ -27,13 +42,8 @@ void main(void)
 		n_max = n_data;
 	}
 
-	printf("n_max number is %d\n", n_max);
+	printf("n_max number is %d\n", n_max);*/
 	
-
-
-
-
-
 
 	//. p.245_goto
 //	int n_data = 0;
