@@ -4,6 +4,16 @@
 
 void main()
 {
+	//. p.147.6
+	char c_data = NULL;
+	char change_c_data = NULL;
+
+	c_data = getche();
+	printf("\n");
+	change_c_data = c_data - 32;
+	printf("Changed_char => %c", change_c_data);
+
+
 	//. p.147-5
 	/*int nData;
 	printf("input Number: ");
@@ -72,13 +82,13 @@ void main()
 
 
 	//. p.137
-	__int64 nData = 0xFFFFFFFF;  //. __int64라는 자료형은 Visual Studio에서 제공하는 자료형.
+	//__int64 nData = 0xFFFFFFFF;  //. __int64라는 자료형은 Visual Studio에서 제공하는 자료형.
 
-	printf("%d\n", nData);
-	printf("%d\n", nData + 1);
-	printf("%u\n", nData);
-	printf("%u\n", nData + 1);
-	printf("%I64u\n", nData + 1);
+	//printf("%d\n", nData);
+	//printf("%d\n", nData + 1);
+	//printf("%u\n", nData);
+	//printf("%u\n", nData + 1);
+	//printf("%I64u\n", nData + 1);
 
 
 	//. p.130
