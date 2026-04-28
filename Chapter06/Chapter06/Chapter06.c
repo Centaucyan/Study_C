@@ -2,6 +2,19 @@
 
 void main(void)
 {
+	//. p.219-3
+	int n_01 = 0, n_02 = 0, n_03 = 0, n_max = 0;
+	printf("Input int number 3times: ");
+	scanf_s("%d %d %d", &n_01, &n_02, &n_03);
+
+	int n_temp = 0;
+
+	n_temp = (n_01 > n_02) ? n_01 : n_02;
+	n_max = (n_temp > n_03) ? n_temp : n_03;
+
+	printf("Max value is '%d'", n_max);
+
+
 	//. p.219-1
 	/*int nInput_1 = 0, nInput_2 = 0;
 	printf("Input two numbers: ");
@@ -24,13 +37,13 @@ void main(void)
 
 
 	//. +@
-	int nData = 10;
+	/*int nData = 10;
 	int* nResult;
 
 	nResult = &nData;
 
 	printf("%d, %p\n", nData, &nData);
-	printf("%d, %p, %p\n", *nResult, nResult, &nResult);
+	printf("%d, %p, %p\n", *nResult, nResult, &nResult);*/
 
 
 	//. p.212
