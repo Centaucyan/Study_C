@@ -1,6 +1,6 @@
 # Study_C
 - Description
-    - 업무를 하면서 부족하다고 느낀 C 언어 개인 Study Practice
+    - 업무를 하면서 부족하다고 느낀 C 언어 Study Practice
 ***
 - Book : 최호성의 C 프로그래밍
 - Tool : Visual Studio 2022
@@ -33,10 +33,11 @@
 
 ### Chapter 07
 - if
-- switch/case : switch 식의 결과값은 정수(char, int, short)계열만 가능
+- switch/case/[default] : switch 식의 결과값은 정수(char, int, short)계열만 가능
     - case의 break;를 만날때까지, 또는 default의 ;을 만날때까지 순차적 실행
 - goto 레이블;
 
 ### Chapter 08
 - while, do/while
 - for
+- break, continue : 가장 가까운 반복문에 영향
