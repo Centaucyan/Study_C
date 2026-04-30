@@ -41,3 +41,7 @@
 - while, do/while
 - for
 - break, continue : 가장 가까운 반복문에 영향
+
+### Chapter 09
+- *(pointer)
+- Pointer offset
