@@ -4,17 +4,31 @@
 
 void main(void)
 {
-	//. p.276-2
-	int n_num_4t = 0, n_sum_4t = 0;
+	//. p.276-3
+	int a = 0, b = 0, m_result = 0;
 
-	for (int i = 10; i <= 100; ++i) {
-		if ((i % 4) == 0) {
-			n_num_4t += 1;
-			n_sum_4t += i;
+	for (a = 1; a < 10; ++a) {
+		printf("=== %d단 ===\n", a);
+
+		for (b = 1; b < 10; ++b) {
+			m_result = a * b;
+			printf("%d x %d = %d\n", a, b, m_result);
 		}
+		printf("\n");
 	}
 
-	printf("n_num4t: %d __ n_sum4t: %d\n", n_num_4t, n_sum_4t);
+
+	//. p.276-2
+	//int n_num_4t = 0, n_sum_4t = 0;
+
+	//for (int i = 10; i <= 100; ++i) {
+	//	if ((i % 4) == 0) {
+	//		n_num_4t += 1;
+	//		n_sum_4t += i;
+	//	}
+	//}
+
+	//printf("n_num4t: %d __ n_sum4t: %d\n", n_num_4t, n_sum_4t);
 
 
 	//. p.276-1
