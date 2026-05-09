@@ -45,3 +45,5 @@
 ### Chapter 09
 - *(pointer)
 - Pointer offset
+- malloc(메모리 크기) : stdlib.h에 정의
+- memset(시작 메모리, 값, 메모리 크기) : stling.h에 정의
