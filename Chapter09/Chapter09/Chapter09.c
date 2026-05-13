@@ -1,22 +1,30 @@
-﻿#include <stdio.h>  //. prinf(), scanf(), sprintf(), _getch(), _getche(), gets(), puts() 
+﻿#include <stdio.h>  //. prinf(), scanf(), sprintf(), _getch(), _getche(), gets(), puts() , stdlen()
 #include <stdlib.h>  //. _countof(), malloc(), free()
 #include <string.h>  //. memset()
 // #include <conio.h>  //. _getch(), _getche()에 대한 선언 포함. 현재는 stdio.h에도 포함되어 있음.
 
 void main(void)
 {
+	//. +a
+	char* psz_data = "Test...!!!";
+
+	//printf("s: %s", *psz_data);
+	printf("c: %c\n", *psz_data);
+	printf("c: %c\n\n", *(psz_data+2));
+
+
 	//. p.298
-	int* pn_data = NULL;
-	pn_data = (int*)malloc(sizeof(int) * 4);
-	memset(pn_data, 0, sizeof(int) * 4);
+	//int* pn_data = NULL;
+	//pn_data = (int*)malloc(sizeof(int) * 4);
+	//memset(pn_data, 0, sizeof(int) * 4);
 
-	*(pn_data) = 10;
-	*(pn_data + 1) = 20;
+	//*(pn_data) = 10;
+	//*(pn_data + 1) = 20;
 
-	printf("pn_data: %d\n", *(pn_data));
-	printf("pn_data + 1: %d\n\n", *(pn_data + 1));
+	//printf("pn_data: %d\n", *(pn_data));
+	//printf("pn_data + 1: %d\n\n", *(pn_data + 1));
 
-	free(pn_data);  //. malloc()로 동적으로 받은 메모리 반환
+	//free(pn_data);  //. malloc()로 동적으로 받은 메모리 반환
 
 	//. p.295
 	//char szName[16] = { 0 };
