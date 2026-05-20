@@ -1,22 +1,51 @@
 #include <stdio.h>
-// #include <stdlib.h>  //. _countof()
-// #include <conio.h>  //. _getch(), _getche()에 대한 선언 포함. 현재는 stdio.h에도 포함되어 있음.
+//#include <stdlib.h>  //. _countof()
+//#include <conio.h>  //. _getch(), _getche()에 대한 선언 포함. 현재는 stdio.h에도 포함되어 있음.
 
 void main(void)
 {
-	//. p.247-2
-	char c_data = 0;
+	//. p247-3
+	char c_data = NULL;
+	int n_a = 0, n_b = 0;
+	int n_result = 0;
 
-RESTART:
+	printf("Input 1 char(a,b or c), 2 int values: ");
+	scanf_s("%c %d %d", &c_data, sizeof(c_data), & n_a, &n_b);
+	printf("\n");
 
-	c_data = getche();
-
-	if (c_data == 'y' || c_data == 'Y') {
-		return;
+	switch (c_data) {
+		case 'a':
+			n_result = n_a + n_b;
+			printf("You enterd char a. so value is %d\n", n_result);
+			break;
+		case 'b':
+			n_result = n_a * n_b;
+			printf("You enterd char b. so value is %d\n", n_result);
+			break;
+		case 'c':
+			n_result = n_a - n_b;
+			printf("You enterd char c. so value is %d\n", n_result);
+			break;
+		default:
+			printf("You enterd no valid value. Program End.\n");
+			break;
 	}
-	else {
-		goto RESTART;
-	}
+		
+
+
+//	//. p.247-2
+//	char c_data = 0;
+//
+//RESTART:
+//
+//	c_data = getche();
+//
+//	if (c_data == 'y' || c_data == 'Y') {
+//		return;
+//	}
+//	else {
+//		goto RESTART;
+//	}
 
 
 	//. p.247-1
