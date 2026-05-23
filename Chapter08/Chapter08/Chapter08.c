@@ -4,18 +4,43 @@
 
 void main(void)
 {
-	//. p.276-3
-	int a = 0, b = 0, m_result = 0;
+	//. p.276-4
+	int n_input = 0;
+	int n_max = 0, n_min = 0;
 
-	for (a = 1; a < 10; ++a) {
-		printf("=== %d단 ===\n", a);
-
-		for (b = 1; b < 10; ++b) {
-			m_result = a * b;
-			printf("%d x %d = %d\n", a, b, m_result);
+	for (int i = 0; i < 5; ++i) {
+		printf("%d Input int values: ", i+1);
+		scanf_s("%d", &n_input, sizeof(n_input));
+		
+		if (i == 0) {
+			n_max = n_min = n_input;
 		}
-		printf("\n");
+		else if (n_input > n_max) {
+			n_max = n_input;
+		}
+		else if (n_input < n_min) {
+			n_min = n_input;
+		}
+		else {
+			continue;
+		}
 	}
+	
+	printf("Max value is %d\nMin value is %d\n", n_max, n_min);
+
+
+	//. p.276-3
+	//int a = 0, b = 0, m_result = 0;
+
+	//for (a = 1; a < 10; ++a) {
+	//	printf("=== %d단 ===\n", a);
+
+	//	for (b = 1; b < 10; ++b) {
+	//		m_result = a * b;
+	//		printf("%d x %d = %d\n", a, b, m_result);
+	//	}
+	//	printf("\n");
+	//}
 
 
 	//. p.276-2
