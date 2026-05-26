@@ -5,12 +5,28 @@
 
 void main(void)
 {
-	//. +a
-	char* psz_data = "Test...!!!";
+	//. p.306
+	char* psz_list[3] = { "Test", "String", "Data" };
+	char** ppsz_list = psz_list;
 
-	//printf("s: %s", *psz_data);
-	printf("c: %c\n", *psz_data);
-	printf("c: %c\n\n", *(psz_data+2));
+	char sz_buffer[32] = { "TestString" };
+	char* psz_buffer = sz_buffer;
+
+	printf("%c\n", **psz_list);  //. 배열 선언 자체사 1중 포인터로 선언과 의미 같음. 따라서 2중 포인터로 값을 출력 가능.
+	printf("%c\n", *psz_list[1]);
+	printf("%c\n", *psz_buffer);
+
+	printf("%s\n", psz_list[0]);
+	printf("%s\n", *(ppsz_list + 1));
+
+
+
+	//. +a
+	//char* psz_data = "Test...!!!";
+
+	////printf("s: %s", *psz_data);
+	//printf("c: %c\n", *psz_data);
+	//printf("c: %c\n\n", *(psz_data+2));
 
 
 	//. p.298
