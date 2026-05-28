@@ -12,7 +12,8 @@ void main(void)
 	char sz_buffer[32] = { "TestString" };
 	char* psz_buffer = sz_buffer;
 
-	printf("%c\n", **psz_list);  //. 배열 선언 자체사 1중 포인터로 선언과 의미 같음. 따라서 2중 포인터로 값을 출력 가능.
+	printf("%c\n", **psz_list);  //. 배열 선언 자체가 1중 포인터로 선언과 의미 같음. 따라서 2중 포인터로 값을 출력 가능.
+	printf("%c\n", *psz_list);  //. psz_list[0]에 값으로 들어 있는 주소 자체를 %c인 아스키 코드로 해석해서 이상한 글자 나옴.
 	printf("%c\n", *psz_list[1]);
 	printf("%c\n", *psz_buffer);
 
