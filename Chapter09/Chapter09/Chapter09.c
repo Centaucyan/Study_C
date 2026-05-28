@@ -5,20 +5,56 @@
 
 void main(void)
 {
+	//. p.311
+	int n_data = 10;
+
+	void* psz_string = "Test string!";
+	void* pfn_main = main;
+	void* pn_number = &n_data;
+
+	printf("%s\n", psz_string);
+	printf("%c\n", psz_string);  //. psz_string에는 문자 2가 입력된 주소가 값으로 들어가 있음.주소를 % c 아스키 문자로 해석하려니 예상 못하는 문자라 나옴.
+	printf("%c\n\n", *(char*)psz_string);  //. void형으로 선언된 포인터 변수를 형변환하여 출력하면 예상한 값 출력
+
+	//printf("%d\n", *pn_number);  //. *pn_number는 void형이므로 여기의 주소의 값을 int로 해석하지 않음. 컴파일 오류 발생.
+	printf("%d\n\n", *(int*)pn_number);
+
+	//printf("%c\n", *(psz_string + 1);  //. void형이므로 psz_string을 얼마만큼의 자료형 크기만큼 옵셋 해야 할지 모름. 컴파일 오류 발생.
+	printf("%c\n", *((char*)psz_string + 1));  //. %c는 값을 아스키 코드로 변환하여 출력.
+	printf("%s\n\n", (char*)psz_string + 1);  //. %s는 값을 주소로 보고 해당 주소에 있는 값을 \0이 나올 때까지 출력.
+	//printf("%s\n\n", *(char*)psz_string + 1);  //. 바로 전 줄의 주석 처리 내용에 의해 *를 붙이면 char 사이즈 1만큼 옵셋 된 주소에 있는 값을 %s에 의해 다시 주소로 본다. 정상 작동 안하게 됨.
+
+
+	//. p.310
+	//char* psz_data = "1234 67890!";
+
+	//printf("%s\n", psz_data);
+	//printf("%s\n", psz_data++);
+	//printf("%s\n", psz_data);
+
+	//printf("%c\n", psz_data);  //. 앞에서 psz_data++에 의해 psz_data에는 문자 2가 입력된 주소가 값으로 들어가 있음. 주소를 %c 아스키 문자로 해석하려니 예상 못하는 문자라 나옴.
+	//printf("%c\n", *psz_data);
+	//printf("%c\n", *psz_data++);
+	//printf("%c\n", *--psz_data);
+
+	//printf("%c\n", (*psz_data) + 3);
+	//printf("%c\n", *psz_data + 3); //. +연산보다 *(간접지정) 연산이 우선순위가 더 높기 때문에 괄호는 효과 없지만, 가독성을 위해 하는 편이 좋음.
+
+
 	//. p.306
-	char* psz_list[3] = { "Test", "String", "Data" };
-	char** ppsz_list = psz_list;
+	//char* psz_list[3] = { "Test", "String", "Data" };
+	//char** ppsz_list = psz_list;
 
-	char sz_buffer[32] = { "TestString" };
-	char* psz_buffer = sz_buffer;
+	//char sz_buffer[32] = { "TestString" };
+	//char* psz_buffer = sz_buffer;
 
-	printf("%c\n", **psz_list);  //. 배열 선언 자체가 1중 포인터로 선언과 의미 같음. 따라서 2중 포인터로 값을 출력 가능.
-	printf("%c\n", *psz_list);  //. psz_list[0]에 값으로 들어 있는 주소 자체를 %c인 아스키 코드로 해석해서 이상한 글자 나옴.
-	printf("%c\n", *psz_list[1]);
-	printf("%c\n", *psz_buffer);
+	//printf("%c\n", **psz_list);  //. 배열 선언 자체가 1중 포인터로 선언과 의미 같음. 따라서 2중 포인터로 값을 출력 가능.
+	//printf("%c\n", *psz_list);  //. psz_list[0]에 값으로 들어 있는 주소 자체를 %c인 아스키 코드로 해석해서 이상한 글자 나옴.
+	//printf("%c\n", *psz_list[1]);
+	//printf("%c\n", *psz_buffer);
 
-	printf("%s\n", psz_list[0]);
-	printf("%s\n", *(ppsz_list + 1));
+	//printf("%s\n", psz_list[0]);
+	//printf("%s\n", *(ppsz_list + 1));
 
 
 
