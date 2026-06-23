@@ -66,6 +66,21 @@ void main(void)
 	//	
 	//printf("sum 1~100: %d", n_sum);
 
+	//. p.274
+	//int i = 0, n_input = 0, n_total = 0;
+
+	//for (i = 0; i < 5; ++i) {
+	//	scanf_s("%d", &n_input);
+
+	//	if (n_input < 0) {
+	//		//continue;
+	//		break;
+	//	}
+
+	//	n_total += n_input;
+	//}
+
+	//printf("Total: %d, i: %d\n", n_total, i);
 
 	//. p.269
 	//char ch;
