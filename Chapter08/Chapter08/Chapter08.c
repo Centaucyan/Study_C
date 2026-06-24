@@ -4,29 +4,42 @@
 
 void main(void)
 {
-	//. p.276-4
-	int n_input = 0;
-	int n_max = 0, n_min = 0;
+	//. p.276-5
+	int t_count = 0;
+	char input_char = 0;
 
-	for (int i = 0; i < 5; ++i) {
-		printf("%d Input int values: ", i+1);
-		scanf_s("%d", &n_input, sizeof(n_input));
-		
-		if (i == 0) {
-			n_max = n_min = n_input;
-		}
-		else if (n_input > n_max) {
-			n_max = n_input;
-		}
-		else if (n_input < n_min) {
-			n_min = n_input;
-		}
-		else {
-			continue;
+	while ((input_char = getchar()) != '/') {
+		if (input_char == 't') {
+			t_count += 1;
 		}
 	}
-	
-	printf("Max value is %d\nMin value is %d\n", n_max, n_min);
+
+	printf("\nHow many 't' : %d\n", t_count);
+
+
+	//. p.276-4
+	//int n_input = 0;
+	//int n_max = 0, n_min = 0;
+
+	//for (int i = 0; i < 5; ++i) {
+	//	printf("%d Input int values: ", i+1);
+	//	scanf_s("%d", &n_input, sizeof(n_input));
+	//	
+	//	if (i == 0) {
+	//		n_max = n_min = n_input;
+	//	}
+	//	else if (n_input > n_max) {
+	//		n_max = n_input;
+	//	}
+	//	else if (n_input < n_min) {
+	//		n_min = n_input;
+	//	}
+	//	else {
+	//		continue;
+	//	}
+	//}
+	//
+	//printf("Max value is %d\nMin value is %d\n", n_max, n_min);
 
 
 	//. p.276-3

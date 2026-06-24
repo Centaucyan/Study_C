@@ -108,11 +108,12 @@ void main(void)
 
 	//printf("%zu\n", sizeof(psz_data));
 	//printf("%zu\n", sizeof(*psz_data));
-
-	//printf("%zu\n", sizeof(psz_data + 1));  // *psz_data는 char로 선언되어 있으므로 주소 번지 1 증가. 64비트 시스템에서는 64비트로 주소 저장.
-	//printf("%zu\n", sizeof(*psz_data + 1));  // *psz_data는 char로 선언되어 있으므로 1바이트 이지만 뒤에 int 연산으로 인해 승격된다.
+	//printf("\n");
+	//printf("%zu\n", sizeof(psz_data + 1));  //. *psz_data는 char로 선언되어 있으므로 주소 번지 1 증가. 64비트 시스템에서는 64비트로 주소 저장.
+	//printf("%zu\n", sizeof(*psz_data + 1));  //. *psz_data는 char로 선언되어 있으므로 1바이트 이지만 뒤에 int 연산으로 인해 int로 승격된다.
 	//printf("%zu\n", sizeof(*(psz_data + 1)));
-
+	//printf("\n");
+	//printf("%c\n", (*psz_data + 1));  //. *psz_data는 'T'이며 이것의 아스키코드 값은 84. 여기에 1을 더해 85인 아스키코드 값은 'U'이다.
 
 	//. p.285
 	//int n_data = 10;
