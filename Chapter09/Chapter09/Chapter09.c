@@ -5,20 +5,69 @@
 
 void main(void)
 {
-	//. p.320
+	//. +a 글자 크기 늘어날 수록 재할당
 	char* psz_data = NULL;
-	int n_input = 0;
+	int capacity = 2; // 처음에 임의로 잡은 방의 크기 (2칸)
+	int length = 0;    // 실제 입력된 글자 수
+	char ch;
 
-	printf("Input length: ");
-	scanf_s("%d", &n_input);
-	psz_data = (char*)malloc(sizeof(char) * n_input);
+	// 1. 우선 처음에는 10칸만 먼저 빌려 공간을 만들어둠
+	psz_data = (char*)malloc(sizeof(char) * capacity);
+	if (psz_data == NULL) {
+		printf("메모리 할당 실패!\n");
+		return 1;
+	}
 
-	//fflush(stdin);    //. 입력 버퍼를 비울 때 역할 안됨. 대신 아래와 같이 while문을 이용해서 입력 버퍼 비움.
-	while (getchar() != '\n'); 
-	gets(psz_data);
+	printf("문자열을 입력하세요 (엔터를 치면 입력이 끝납니다):\n");
+
+	// 2. 한 글자씩(getchar) 실시간으로 읽어오기
+	while ((ch = getchar()) != '\n' && ch != EOF) {
+
+		// 3. 만약 입력받은 글자 수가 방 크기(capacity)보다 커지려고 하면?
+		if (length >= capacity - 1) {
+			capacity *= 2; // 방 크기를 2배로 늘리겠다고 계획함 (10 -> 20 -> 40...)
+
+			// realloc으로 기존 메모리 데이터는 그대로 유지하면서 크기만 확장!
+			char* p_temp = (char*)realloc(psz_data, sizeof(char) * capacity);
+
+			if (p_temp == NULL) {
+				printf("메모리 재할당 실패!\n");
+				free(psz_data); // 실패했더라도 기존 메모리는 지워줘야 해
+				return 1;
+			}
+			psz_data = p_temp; // 안전하게 늘어난 새 주소로 업데이트
+		}
+
+		psz_data[length++] = ch; // 늘어난 공간에 글자를 차곡차곡 넣음
+	}
+
+	// 4. C언어 문자열의 끝을 알리는 '마침표' 역할의 널 문자(\0)를 꼭 넣어줘야 해
+	psz_data[length] = '\0';
+
+	// 5. 결과 출력
+	printf("\n[입력된 문자열 출력]\n");
 	puts(psz_data);
 
+	// 6. 다 썼으면 빌렸던 메모리 반납!
 	free(psz_data);
+
+	return 0;
+
+
+	//. p.320
+	//char* psz_data = NULL;
+	//int n_input = 0;
+
+	//printf("Input length: ");
+	//scanf_s("%d", &n_input);
+	//psz_data = (char*)malloc(sizeof(char) * n_input);
+
+	////fflush(stdin);    //. 입력 버퍼를 비울 때 역할 안됨. 대신 아래와 같이 while문을 이용해서 입력 버퍼 비움.
+	//while (getchar() != '\n'); 
+	//gets(psz_data);
+	//puts(psz_data);
+
+	//free(psz_data);
 
 
 	//. p.311
